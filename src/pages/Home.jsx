@@ -20,20 +20,21 @@ import RatingSlider from '../Components/core/Ratings/RatingSlider';
 
 function Home() {
     const [CatalogPageData, setCatalogPageData] = useState(null);
-    const categoryID = "6475dbeb49dcc886b5698441";
+    // const categoryID = "6475dbeb49dcc886b5698441";
 
-    useEffect(() => {
-        const fetchCatalogPageData = async () => {
+    // useEffect(() => {
+    //     const fetchCatalogPageData = async () => {
             
-                const result = await getCatalogaPageData(categoryID,dispatch);
-                setCatalogPageData(result);
-                // console.log("page data",CatalogPageData);
+    //             const result = await getCatalogaPageData(categoryID,dispatch);
+    //             setCatalogPageData(result);
+    //             // console.log("page data",CatalogPageData);
             
-        }
-        if (categoryID) {
-            fetchCatalogPageData();
-        }
-    }, [categoryID])
+    //     }
+    //     if (categoryID) {
+    //         fetchCatalogPageData();
+    //     }
+    // }, [categoryID])
+
     const dispatch = useDispatch();
   return (
     <div>
